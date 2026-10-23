@@ -1,0 +1,15 @@
+name: rs-validacijas
+channels:
+  - conda-forge
+  - nodefaults  # only conda-forge, no channel mixing
+dependencies:
+  - python=3.14
+  - pandas=3.0
+  - python-duckdb=1.5
+  - matplotlib=3.11
+  - jinja2  # pandas Styler (the formatted tables) needs it
+  - ipykernel  # runs the notebook in VS Code
+  - jupyterlab  # runs it in the browser
+  - black
+  - isort  # sorts imports; the extension runs it before Black
+  - jupyterlab_code_formatter

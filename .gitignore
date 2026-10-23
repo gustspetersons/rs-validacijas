@@ -1,0 +1,12 @@
+# Dati: lejupielādē no data.gov.lv (sk. README.md)
+ValidacijuDati06_2026/
+*.duckdb
+*.duckdb.wal
+
+# Kopsavilkuma rediģējamais avots; repozitorijā ir PDF
+*.docx
+
+# Jupyter, VS Code, Python
+.ipynb_checkpoints/
+.vscode/
+__pycache__/
