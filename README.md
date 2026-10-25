@@ -25,7 +25,7 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
 | `izveidot_datubazi.py` | izveido DuckDB failu no lejupielādētajiem datiem |
 | `environment.yml` | conda vide: Python 3.14, pandas 3.0, DuckDB 1.5, matplotlib 3.11 |
 | `explicit.txt` | precīzas pakotņu versijas Windows datoram (win-64) |
-| `atteli/` | analīzes grafiki (PNG) |
+| `atteli/` | analīzes grafiki un tabula (PNG) |
 | `LICENSE` | MIT licence |
 
 ## Kā atkārtot
