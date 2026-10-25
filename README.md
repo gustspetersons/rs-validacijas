@@ -5,7 +5,7 @@ Rīgas satiksmes sabiedriskajā transportā 2026. gada jūnijā reģistrēta 8 7
 - **[Kopsavilkums vienā lapā (PDF)](Rigas_satiksmes_validacijas_2026-06_kopsavilkums.pdf)**
 - **[Pilnā analīze nbviewer vietnē](https://nbviewer.org/github/gustspetersons/rs-validacijas/blob/main/Rigas_satiksmes_validacijas_2026-06.ipynb)**: tur tabulas un grafiki izskatās tāpat kā Jupyter vidē.
 
-![Validācijas pa dienām, 2026. gada jūnijs](1_junija_validacijas_pa_datumiem_un_kanaliem.png)
+![Validācijas pa dienām, 2026. gada jūnijs](atteli/1_junija_validacijas_pa_datumiem_un_kanaliem.png)
 
 ## Galvenie secinājumi
 
@@ -25,7 +25,7 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
 | `izveidot_datubazi.py` | izveido DuckDB failu no lejupielādētajiem datiem |
 | `environment.yml` | conda vide: Python 3.14, pandas 3.0, DuckDB 1.5, matplotlib 3.11 |
 | `explicit.txt` | precīzas pakotņu versijas Windows datoram (win-64) |
-| `1_…png` līdz `5_…png` | analīzes grafiki |
+| `atteli/` | analīzes grafiki (PNG) |
 | `LICENSE` | MIT licence |
 
 ## Kā atkārtot
