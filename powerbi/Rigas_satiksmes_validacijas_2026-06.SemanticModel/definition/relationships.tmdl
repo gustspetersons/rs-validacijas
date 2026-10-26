@@ -1,0 +1,24 @@
+relationship AutoDetected_85f26a2e-9e21-4113-8694-9118c03685c9
+	fromColumn: E-taloni.Stunda
+	toColumn: Stundas.Stunda
+
+relationship AutoDetected_a19fe49f-da56-46f3-a19a-185f35efdeb4
+	fromColumn: Lietotnes.Stunda
+	toColumn: Stundas.Stunda
+
+relationship AutoDetected_6bba1bf5-3c0e-4a09-aa7d-d8da64198295
+	fromColumn: E-taloni.'Maršruta ID'
+	toColumn: Maršruti.'Maršruta ID'
+
+relationship AutoDetected_c562a880-8d6b-4162-8ac5-240c8323e5b2
+	fromColumn: Lietotnes.'Maršruta ID'
+	toColumn: Maršruti.'Maršruta ID'
+
+relationship 05ddded1-3c16-0096-280b-60105e2af028
+	fromColumn: E-taloni.Datums
+	toColumn: Datumi.Datums
+
+relationship 2327bdb9-ccb9-7e9a-ae8a-f98ce929bfc1
+	fromColumn: Lietotnes.Datums
+	toColumn: Datumi.Datums
+

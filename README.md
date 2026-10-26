@@ -4,6 +4,7 @@ Rīgas satiksmes sabiedriskajā transportā 2026. gada jūnijā reģistrēta 8 7
 
 - **[Kopsavilkums vienā lapā (PDF)](Rigas_satiksmes_validacijas_2026-06_kopsavilkums.pdf)**
 - **[Pilnā analīze nbviewer vietnē](https://nbviewer.org/github/gustspetersons/rs-validacijas/blob/main/Rigas_satiksmes_validacijas_2026-06.ipynb)**: tur tabulas un grafiki izskatās tāpat kā Jupyter vidē.
+- **Power BI pārskats** (`powerbi/`), atverams programmā Power BI Desktop
 
 ![Validācijas pa dienām, 2026. gada jūnijs](atteli/1_junija_validacijas_pa_datumiem_un_kanaliem.png)
 
@@ -22,7 +23,10 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
 |---|---|
 | `Rigas_satiksmes_validacijas_2026-06.ipynb` | analīze (Jupyter, latviešu valodā) |
 | `Rigas_satiksmes_validacijas_2026-06_kopsavilkums.pdf` | kopsavilkums vienā lapā |
+| `powerbi/` | Power BI pārskats `.pbip` formātā: zvaigznes shēmas modelis, DAX mēri, dinamiska rindu līmeņa drošība |
 | `izveidot_datubazi.py` | izveido DuckDB failu no lejupielādētajiem datiem |
+| `definicijas.py` | analīzes un `sagatavot_powerbi_datus.py` kopīgās definīcijas: maršrutu nosaukumu tīrīšana, dienu tipi, kalendāra komentāri, Jāņu ietekmes sākuma datums |
+| `sagatavot_powerbi_datus.py` | sagatavo Power BI modeļa datus (piecus Parquet failus) no DuckDB faila |
 | `environment.yml` | conda vide: Python 3.14, pandas 3.0, DuckDB 1.5, matplotlib 3.11 |
 | `explicit.txt` | precīzas pakotņu versijas Windows datoram (win-64) |
 | `atteli/` | analīzes grafiki un tabula (PNG) |
@@ -48,6 +52,13 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
    ```
 
 4. Atver analīzi programmā Jupyter vai VS Code un palaid visas šūnas (Run All). Pirms kolonnu pārveidošanas e-talonu tabula aizņem ~2,5 GB atmiņas.
+5. Power BI pārskatam sagatavo modeļa datus (piecus Parquet failus mapē `powerbi/dati/`):
+
+   ```
+   python sagatavot_powerbi_datus.py
+   ```
+
+6. Atver `powerbi/Rigas_satiksmes_validacijas_2026-06.pbip` programmā Power BI Desktop, parametrā `DataFolder` norādi mapes `powerbi\dati\` pilno ceļu savā datorā ar `\` beigās (Home → Transform data → Edit parameters) un atjauno datus (Refresh).
 
 ## Licences
 
@@ -56,7 +67,7 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
 
 ## In English
 
-An analysis of the 8,719,571 ticket validations on Rīgas satiksme public transport in June 2026: 6,869,458 by e-talon smart cards and 1,850,113 in mobile apps. It compares the two channels by hour, weekday and route, separates the effect of an open-air fair from that of the first sunny summer weekend, follows the Midsummer (Jāņi) holidays to the end of the month and documents quirks in the open data. The notebook and the one-page summary (PDF) are in Latvian. The code and analysis are under the MIT licence; the data come from the Latvian Open Data Portal under CC0 1.0. Built with DuckDB, pandas and matplotlib.
+An analysis of the 8,719,571 ticket validations on Rīgas satiksme public transport in June 2026: 6,869,458 by e-talon smart cards and 1,850,113 in mobile apps. It compares the two channels by hour, weekday and route, separates the effect of an open-air fair from that of the first sunny summer weekend, follows the Midsummer (Jāņi) holidays to the end of the month and documents quirks in the open data. A Power BI report (folder `powerbi/`), built on a star-schema model with DAX measures and dynamic row-level security, presents the same data interactively. The notebook, the one-page summary (PDF) and the report are in Latvian. The code and analysis are under the MIT licence; the data come from the Latvian Open Data Portal under CC0 1.0. Built with DuckDB, pandas, matplotlib and Power BI.
 
 ---
 

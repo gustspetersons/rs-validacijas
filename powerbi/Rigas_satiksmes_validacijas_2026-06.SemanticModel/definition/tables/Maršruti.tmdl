@@ -1,0 +1,79 @@
+table Maršruti
+	lineageTag: bbbf6859-27b7-4358-84ab-d69521afb2a4
+
+	column 'Maršruta ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bd63c0d9-da9b-40dc-9064-f7c300cb6893
+		summarizeBy: none
+		sourceColumn: Maršruta ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maršruta kods'
+		dataType: string
+		lineageTag: 159f8f6e-dbc8-4b1a-8cb0-d94e8cdbd865
+		summarizeBy: none
+		sourceColumn: Maršruta kods
+		sortByColumn: 'Maršruta ID'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transportlīdzekļa veids'
+		dataType: string
+		lineageTag: f11112fe-66bf-4135-a65e-b5ec9c9e5652
+		summarizeBy: none
+		sourceColumn: Transportlīdzekļa veids
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maršruta numurs'
+		dataType: string
+		lineageTag: 6ee8a61d-1d45-442a-9be0-308ef0f501bf
+		summarizeBy: none
+		sourceColumn: Maršruta numurs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maršruta nosaukums'
+		dataType: string
+		lineageTag: 91e363a7-0a3f-496c-b58b-98fa6740956a
+		summarizeBy: none
+		sourceColumn: Maršruta nosaukums
+
+		annotation SummarizationSetBy = Automatic
+
+	column Maršruts
+		dataType: string
+		lineageTag: 7aca1ee6-564c-47f2-9ff0-1114fc04a9ac
+		summarizeBy: none
+		sourceColumn: Maršruts
+		sortByColumn: 'Maršruta ID'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nakts maršruts'
+		dataType: string
+		lineageTag: 6c5a1968-6770-453b-98f6-9cd66fdcab66
+		summarizeBy: none
+		sourceColumn: Nakts maršruts
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Maršruti = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(DataFolder & "marsruti.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,22 @@
+EVALUATE
+SUMMARIZECOLUMNS (
+    Datumi[Periods],
+    "No e-taloniem", COUNTROWS ( 'E-taloni' ),
+    "No lietotnēm", SUM ( Lietotnes[Validāciju skaits] )
+)
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    'Maršruti'[Maršruta kods],
+    TREATAS ( { "A 35", "A 71", "A 95" }, 'Maršruti'[Maršruta kods] ),
+    "No e-taloniem", COUNTROWS ( 'E-taloni' ),
+    "No lietotnēm", SUM ( Lietotnes[Validāciju skaits] )
+)
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    Stundas[Stunda],
+    "No e-taloniem", COUNTROWS ( 'E-taloni' ),
+    "No lietotnēm", SUM ( Lietotnes[Validāciju skaits] )
+)
+ORDER BY Stundas[Stunda]

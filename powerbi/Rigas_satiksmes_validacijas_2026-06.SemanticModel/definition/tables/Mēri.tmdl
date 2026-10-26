@@ -1,0 +1,92 @@
+table Mēri
+	lineageTag: 7d74e90f-2097-417c-bdb1-7ffd892160bc
+
+	measure 'Validācijas no e-taloniem' = ```
+			
+			        COUNTROWS ( 'E-taloni' )
+			```
+		formatString: #,0
+		lineageTag: b07ce907-458d-452a-847d-46ef11358ab6
+
+	measure 'Validācijas no lietotnēm' = ```
+			
+			        SUM ( Lietotnes[Validāciju skaits] )
+			```
+		formatString: #,0
+		lineageTag: 6cd030da-334c-43ec-9fe1-e47d92db7aca
+
+	measure 'Validācijas kopā' = ```
+			
+			        [Validācijas no e-taloniem] + [Validācijas no lietotnēm]
+			```
+		formatString: #,0
+		lineageTag: 72498a4b-4935-44ad-bd00-51411ec6a813
+
+	measure 'Lietotņu validāciju īpatsvars' = ```
+			
+			        DIVIDE ( [Validācijas no lietotnēm], [Validācijas kopā] )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: a5558dc0-7a24-4698-b692-1edd240a54b2
+
+	measure 'Dienu skaits' = ```
+			
+			        CALCULATE (
+			            COUNTROWS ( Datumi ),
+			            KEEPFILTERS ( NOT ISBLANK ( Datumi[Periods] ) )
+			        )
+			```
+		formatString: #,0
+		lineageTag: d8513f62-693d-4ffd-be90-913fa8bd5006
+
+	measure 'Vidēji dienā no e-taloniem' = ```
+			
+			        DIVIDE ( [Validācijas no e-taloniem], [Dienu skaits] )
+			```
+		formatString: #,0
+		lineageTag: dee1f183-a22e-466a-9bc8-3b28547197ab
+
+	measure 'Vidēji dienā no lietotnēm' = ```
+			
+			        DIVIDE ( [Validācijas no lietotnēm], [Dienu skaits] )
+			```
+		formatString: #,0
+		lineageTag: 3a4d97ee-fd67-4ddc-b768-43dbf54c3a22
+
+	measure 'Lietotņu validāciju īpatsvars tīklā' = ```
+			
+			   CALCULATE ( [Lietotņu validāciju īpatsvars], REMOVEFILTERS ( 'Maršruti' ) )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 1197771a-bff7-4a6b-a0c2-a89135201526
+
+	measure 'Maršrutu skaits' = ```
+			
+			   COUNTROWS (
+			       FILTER ( VALUES ( 'Maršruti'[Maršruta ID] ), NOT ISBLANK ( [Validācijas kopā] ) )
+			   )
+			```
+		formatString: 0
+		lineageTag: 2d675eaa-71b0-4c54-a3f2-67f8dd4dbc60
+
+	measure 'Atšķirība no tīkla' = [Lietotņu validāciju īpatsvars] - [Lietotņu validāciju īpatsvars tīklā]
+		lineageTag: fb936e47-ea61-4a16-b558-aab890ceead5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		isHidden
+		formatString: 0
+		lineageTag: bae503a7-b20a-4296-a109-102de74b88e2
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Mēri = calculated
+		mode: import
+		source = { BLANK () }
+
+	annotation PBI_Id = 6486034172ca4cb1a7480903625ea86a
+

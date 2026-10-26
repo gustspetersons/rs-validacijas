@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3a8d798d65de6a6deb9d",
+  "position": {
+    "x": 300,
+    "y": 290,
+    "z": 5000,
+    "height": 280,
+    "width": 280,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mēri"
+                    }
+                  },
+                  "Property": "Validācijas no lietotnēm"
+                }
+              },
+              "queryRef": "Mēri.Validācijas no lietotnēm",
+              "nativeQueryRef": "Validācijas no lietotnēm"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mēri"
+                  }
+                },
+                "Property": "Validācijas no lietotnēm"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Validācijas no lietotnēm"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

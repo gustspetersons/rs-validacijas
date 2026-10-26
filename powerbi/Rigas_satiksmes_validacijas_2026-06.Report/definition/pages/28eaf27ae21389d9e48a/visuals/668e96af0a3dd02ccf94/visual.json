@@ -1,0 +1,124 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "668e96af0a3dd02ccf94",
+  "position": {
+    "x": 300,
+    "y": 870,
+    "z": 7000,
+    "height": 210,
+    "width": 280,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Datumi"
+                    }
+                  },
+                  "Property": "Datums"
+                }
+              },
+              "queryRef": "Datumi.Datums",
+              "nativeQueryRef": "Datums",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mēri"
+                    }
+                  },
+                  "Property": "Validācijas no e-taloniem"
+                }
+              },
+              "queryRef": "Mēri.Validācijas no e-taloniem",
+              "nativeQueryRef": "Validācijas no e-taloniem"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mēri"
+                    }
+                  },
+                  "Property": "Validācijas no lietotnēm"
+                }
+              },
+              "queryRef": "Mēri.Validācijas no lietotnēm",
+              "nativeQueryRef": "Validācijas no lietotnēm"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Datumi"
+                  }
+                },
+                "Property": "Datums"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Validācijas no e-taloniem un lietotnēm'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'pa datumiem'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,54 @@
+DEFINE
+    MEASURE 'Mēri'[Validācijas no e-taloniem] =
+        COUNTROWS ( 'E-taloni' )
+    MEASURE 'Mēri'[Validācijas no lietotnēm] =
+        SUM ( Lietotnes[Validāciju skaits] )
+    MEASURE 'Mēri'[Validācijas kopā] =
+        [Validācijas no e-taloniem] + [Validācijas no lietotnēm]
+    MEASURE 'Mēri'[Lietotņu validāciju īpatsvars] =
+        DIVIDE ( [Validācijas no lietotnēm], [Validācijas kopā] )
+    MEASURE 'Mēri'[Dienu skaits] =
+        CALCULATE (
+            COUNTROWS ( Datumi ),
+            KEEPFILTERS ( NOT ISBLANK ( Datumi[Periods] ) )
+        )
+    MEASURE 'Mēri'[Vidēji dienā no e-taloniem] =
+        DIVIDE ( [Validācijas no e-taloniem], [Dienu skaits] )
+    MEASURE 'Mēri'[Vidēji dienā no lietotnēm] =
+        DIVIDE ( [Validācijas no lietotnēm], [Dienu skaits] )
+
+EVALUATE
+ROW (
+    "Dienu skaits", [Dienu skaits],
+    "Lietotņu validāciju īpatsvars", [Lietotņu validāciju īpatsvars]
+)
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    Datumi[Periods],
+    "Dienu skaits", [Dienu skaits],
+    "Lietotņu validāciju īpatsvars", [Lietotņu validāciju īpatsvars]
+)
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    Datumi[Nedēļas dienas numurs],
+    Datumi[Diena],
+    TREATAS ( { "1.–19. jūnijs" }, Datumi[Periods] ),
+    "Dienu skaits", [Dienu skaits],
+    "Vidēji dienā no e-taloniem", [Vidēji dienā no e-taloniem],
+    "Vidēji dienā no lietotnēm", [Vidēji dienā no lietotnēm]
+)
+ORDER BY Datumi[Nedēļas dienas numurs]
+
+EVALUATE
+SUMMARIZECOLUMNS (
+    Stundas[Stunda],
+    TREATAS ( { "1.–19. jūnijs" }, Datumi[Periods] ),
+    TREATAS ( { "darbdiena" }, Datumi[Dienas tips] ),
+    TREATAS ( { 8, 12, 16, 17 }, Stundas[Stunda] ),
+    "Vidēji dienā no e-taloniem", [Vidēji dienā no e-taloniem],
+    "Vidēji dienā no lietotnēm", [Vidēji dienā no lietotnēm],
+    "Lietotņu validāciju īpatsvars", [Lietotņu validāciju īpatsvars]
+)
+ORDER BY Stundas[Stunda]

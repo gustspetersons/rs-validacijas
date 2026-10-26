@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3b9e173b2004808f09b3",
+  "position": {
+    "x": 10,
+    "y": 870,
+    "z": 3000,
+    "height": 210,
+    "width": 280,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mēri"
+                    }
+                  },
+                  "Property": "Validācijas kopā"
+                }
+              },
+              "queryRef": "Mēri.Validācijas kopā",
+              "nativeQueryRef": "Validācijas kopā"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mēri"
+                  }
+                },
+                "Property": "Validācijas kopā"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Validācijas kopā"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

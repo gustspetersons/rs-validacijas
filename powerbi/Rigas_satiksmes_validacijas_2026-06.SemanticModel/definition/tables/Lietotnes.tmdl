@@ -1,0 +1,63 @@
+table Lietotnes
+	lineageTag: 70066283-2d2c-45f5-8b46-f35bff95e901
+
+	column Datums
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 30fcc3a3-3a0c-4432-9654-9404fae3e8cb
+		summarizeBy: none
+		sourceColumn: Datums
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Stunda
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b7c797c0-f5df-4abc-9db6-eb025c9ed5d5
+		summarizeBy: none
+		sourceColumn: Stunda
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maršruta ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d30a444c-db69-45ff-8ac8-4e6a91ebf69d
+		summarizeBy: none
+		sourceColumn: Maršruta ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Validāciju skaits'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d6bc1c61-a0cf-499d-8967-87d0274be32a
+		summarizeBy: sum
+		sourceColumn: Validāciju skaits
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Lietotnes = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(DataFolder & "lietotnes.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+

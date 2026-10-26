@@ -1,0 +1,14 @@
+role 'Piekļuve pēc lietotāja'
+	modelPermission: read
+
+	tablePermission Maršruti =
+			[Transportlīdzekļa veids]
+			    IN CALCULATETABLE (
+			        VALUES ( 'Piekļuves tiesības'[Transportlīdzekļa veids] ),
+			        'Piekļuves tiesības'[Lietotāja e-pasts] == USERPRINCIPALNAME ()
+			    )
+
+	tablePermission 'Piekļuves tiesības' = [Lietotāja e-pasts] == USERPRINCIPALNAME ()
+
+	annotation PBI_Id = e5a07b28d2204dcf843baba020136125
+

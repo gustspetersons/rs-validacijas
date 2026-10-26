@@ -10,3 +10,8 @@ ValidacijuDati06_2026/
 .ipynb_checkpoints/
 .vscode/
 __pycache__/
+
+# Power BI: Parquet faili, lokālie iestatījumi un datu kešatmiņa
+powerbi/dati/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

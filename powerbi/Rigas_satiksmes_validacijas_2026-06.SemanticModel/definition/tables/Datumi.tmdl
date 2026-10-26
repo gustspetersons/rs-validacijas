@@ -1,0 +1,125 @@
+table Datumi
+	lineageTag: ec265e5b-42b1-4cef-ba5c-90eb484c42c4
+	dataCategory: Time
+
+	column Datums
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 401a7f67-4685-49e1-bc3b-0314189d5a57
+		summarizeBy: none
+		sourceColumn: Datums
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Gads
+		dataType: int64
+		formatString: 0
+		lineageTag: ebb080fd-8d83-47a6-a6e7-b8519cf67a91
+		summarizeBy: none
+		sourceColumn: Gads
+
+		annotation SummarizationSetBy = User
+
+	column 'Mēneša numurs'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7e2efa62-ab13-4e06-a41a-8988c54eba2a
+		summarizeBy: none
+		sourceColumn: Mēneša numurs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column Mēnesis
+		dataType: string
+		lineageTag: 5e9a7ddc-3e14-4998-9192-c7697b32fe43
+		summarizeBy: none
+		sourceColumn: Mēnesis
+		sortByColumn: 'Mēneša numurs'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mēneša diena'
+		dataType: int64
+		formatString: 0
+		lineageTag: f7749386-3821-4cc4-993b-a5f94cb492d5
+		summarizeBy: none
+		sourceColumn: Mēneša diena
+
+		annotation SummarizationSetBy = User
+
+	column 'Nedēļas dienas numurs'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c7d6317d-b624-4f3a-ac2f-d72c49ec9e3f
+		summarizeBy: none
+		sourceColumn: Nedēļas dienas numurs
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column Diena
+		dataType: string
+		lineageTag: 87eff787-60b1-4747-85b0-5390d0f69acf
+		summarizeBy: none
+		sourceColumn: Diena
+		sortByColumn: 'Nedēļas dienas numurs'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nedēļa līdz'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 333db552-fcdf-455a-b0c9-119bddf27fb3
+		summarizeBy: none
+		sourceColumn: Nedēļa līdz
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Dienas tips'
+		dataType: string
+		lineageTag: 69b2d9d3-7174-4969-acd1-3183f88f2193
+		summarizeBy: none
+		sourceColumn: Dienas tips
+
+		annotation SummarizationSetBy = Automatic
+
+	column Komentārs
+		dataType: string
+		lineageTag: fefbe046-12f2-47ac-8e7d-bd6186fc01d1
+		summarizeBy: none
+		sourceColumn: Komentārs
+
+		annotation SummarizationSetBy = Automatic
+
+	column Periods
+		dataType: string
+		lineageTag: 2f0330e4-7094-409f-81c1-34a668f5a866
+		summarizeBy: none
+		sourceColumn: Periods
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Datumi = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(DataFolder & "datumi.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+

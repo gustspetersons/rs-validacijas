@@ -1,0 +1,38 @@
+table 'Piekļuves tiesības'
+	isHidden
+	lineageTag: 69441ebe-2164-4cc8-87a7-b21c1d6498f5
+
+	column 'Lietotāja e-pasts'
+		dataType: string
+		isHidden
+		lineageTag: be9afb31-6ddd-4f76-885b-92e53d018acb
+		summarizeBy: none
+		sourceColumn: Lietotāja e-pasts
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transportlīdzekļa veids'
+		dataType: string
+		isHidden
+		lineageTag: c6141be0-f6d4-4797-bd5b-740d748f33c6
+		summarizeBy: none
+		sourceColumn: Transportlīdzekļa veids
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Piekļuves tiesības' = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WKilKzC1LzMp0SK1IzC3ISdVLzs9V0lEKgQgXK8XqgNTk56RmJZUWY6qCSkDUJZaW5GNR5QgRhqhJzUnNBpoHtDavuCC/qKQYn8WEFaPYX5aYkpmUiM92rCqIMQXhrFgA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Lietotāja e-pasts" = _t, #"Transportlīdzekļa veids" = _t])
+				in
+				  Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

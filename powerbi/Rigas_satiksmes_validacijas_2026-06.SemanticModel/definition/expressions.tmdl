@@ -1,0 +1,9 @@
+expression DataFolder =
+		let
+		    Source = "C:\Users\User\Documents\rs-validacijas\powerbi\dati\" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text]
+		in
+		    Source
+	lineageTag: 38e7cf85-5ca8-4197-8f06-e39021f196b6
+
+	annotation PBI_ResultType = Text
+

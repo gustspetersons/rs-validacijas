@@ -1,0 +1,85 @@
+table E-taloni
+	lineageTag: 8d0266d2-d676-4ae9-8663-44ba783801f3
+
+	column Datums
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 6671b8de-8696-4a0f-9f8a-1671df535b1e
+		summarizeBy: none
+		sourceColumn: Datums
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Stunda
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ad8231c2-a4ef-4a39-bdcd-2f7ac0356577
+		summarizeBy: none
+		sourceColumn: Stunda
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maršruta ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4d0d0989-d6d2-4710-96b1-75af6750fc19
+		summarizeBy: none
+		sourceColumn: Maršruta ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Parks
+		dataType: string
+		lineageTag: 876bcea5-a508-4cfe-a3fb-3138ad6ab2a3
+		summarizeBy: none
+		sourceColumn: Parks
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transportlīdzekļa identifikators'
+		dataType: int64
+		formatString: 0
+		lineageTag: fa8ed90a-d22d-4c02-a0fb-5717b3962e97
+		summarizeBy: none
+		sourceColumn: Transportlīdzekļa identifikators
+
+		annotation SummarizationSetBy = User
+
+	column Virziens
+		dataType: string
+		lineageTag: 087b297f-7d77-465a-89c4-226c6205a2e4
+		summarizeBy: none
+		sourceColumn: Virziens
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'E-talona identifikators'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ac545dd-e3da-4b2c-bf67-f959afe7b387
+		summarizeBy: none
+		sourceColumn: E-talona identifikators
+
+		annotation SummarizationSetBy = User
+
+	partition E-taloni = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(DataFolder & "etaloni.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+

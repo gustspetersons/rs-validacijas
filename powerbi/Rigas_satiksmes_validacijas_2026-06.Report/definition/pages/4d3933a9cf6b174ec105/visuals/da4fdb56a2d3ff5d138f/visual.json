@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "da4fdb56a2d3ff5d138f",
+  "position": {
+    "x": 300,
+    "y": 290,
+    "z": 2003,
+    "height": 280,
+    "width": 280,
+    "tabOrder": 2003
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mēri"
+                    }
+                  },
+                  "Property": "Maršrutu skaits"
+                }
+              },
+              "queryRef": "Mēri.Maršrutu skaits",
+              "nativeQueryRef": "Maršrutu skaits"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Mēri"
+                  }
+                },
+                "Property": "Maršrutu skaits"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Maršrutu skaits"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Rigas_satiksmes_validacijas_2026-06"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "413623b1-70c1-4edd-a13b-07c853e3b03e"
+  }
+}
