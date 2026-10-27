@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "7f95438dd33d5b9a27df",
+  "position": {
+    "x": 0,
+    "y": 248,
+    "z": 6000,
+    "height": 196,
+    "width": 279,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Regulārie dienas maršruti: bez 8 nakts maršrutiem, slēgtā A 35 un vienreizējiem A 71 un A 95.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#616161"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Tabulas rinda „Kopā” attiecas tikai uz šiem maršrutiem, bet raustītā līnija diagrammā rāda visa tīkla vidējo.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#616161"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -48,12 +48,14 @@ table Datumi
 
 	column 'Mēneša diena'
 		dataType: int64
-		formatString: 0
+		formatString: 0"."
 		lineageTag: f7749386-3821-4cc4-993b-a5f94cb492d5
 		summarizeBy: none
 		sourceColumn: Mēneša diena
 
 		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isCustom":true}
 
 	column 'Nedēļas dienas numurs'
 		dataType: int64

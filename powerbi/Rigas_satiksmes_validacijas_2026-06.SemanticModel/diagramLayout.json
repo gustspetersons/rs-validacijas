@@ -4,91 +4,92 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 306.04603212548705,
-        "y": 0
+        "x": 0,
+        "y": 1
       },
       "nodes": [
         {
           "location": {
-            "x": 646.046032125487,
-            "y": 88.15160412952423
+            "x": 796.046032125487,
+            "y": 0
           },
           "nodeIndex": "Datumi",
           "nodeLineageTag": "ec265e5b-42b1-4cef-ba5c-90eb484c42c4",
           "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 412.04603212548705,
-            "y": 169.4271271582906
-          },
-          "nodeIndex": "E-taloni",
-          "nodeLineageTag": "8d0266d2-d676-4ae9-8663-44ba783801f3",
-          "size": {
-            "height": 248,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 74,
-            "y": 0
-          },
-          "nodeIndex": "Lietotnes",
-          "nodeLineageTag": "70066283-2d2c-45f5-8b46-f35bff95e901",
-          "size": {
-            "height": 176,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 125.01430976973484,
-            "y": 178.30320825904852
-          },
-          "nodeIndex": "Maršruti",
-          "nodeLineageTag": "bbbf6859-27b7-4358-84ab-d69521afb2a4",
-          "size": {
-            "height": 248,
-            "width": 234
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 343.59608587378989,
-            "y": -10.867041644736616
-          },
-          "nodeIndex": "Stundas",
-          "nodeLineageTag": "10f39bd3-cc7d-4c47-b8e2-634c75f06c04",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
-            "x": 856.046032125487,
-            "y": 118.58512495189257
-          },
-          "nodeIndex": "Mēri",
-          "size": {
-            "height": 200,
+            "height": 145,
             "width": 234
           },
           "zIndex": 6
         },
         {
           "location": {
-            "x": 1066.046032125487,
-            "y": 154.58512495189257
+            "x": 495,
+            "y": 89
+          },
+          "nodeIndex": "E-taloni",
+          "nodeLineageTag": "8d0266d2-d676-4ae9-8663-44ba783801f3",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1103,
+            "y": 128
+          },
+          "nodeIndex": "Lietotnes",
+          "nodeLineageTag": "70066283-2d2c-45f5-8b46-f35bff95e901",
+          "size": {
+            "height": 179,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 795,
+            "y": 291
+          },
+          "nodeIndex": "Maršruti",
+          "nodeLineageTag": "bbbf6859-27b7-4358-84ab-d69521afb2a4",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 795.59608587378989,
+            "y": 145
+          },
+          "nodeIndex": "Stundas",
+          "nodeLineageTag": "10f39bd3-cc7d-4c47-b8e2-634c75f06c04",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 143.04603212548705,
+            "y": 129
+          },
+          "nodeIndex": "Mēri",
+          "nodeLineageTag": "7d74e90f-2097-417c-bdb1-7ffd892160bc",
+          "size": {
+            "height": 387,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 143,
+            "y": 0
           },
           "nodeIndex": "Piekļuves tiesības",
           "nodeLineageTag": "69441ebe-2164-4cc8-87a7-b21c1d6498f5",
@@ -96,7 +97,7 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         }
       ],
       "name": "All tables",

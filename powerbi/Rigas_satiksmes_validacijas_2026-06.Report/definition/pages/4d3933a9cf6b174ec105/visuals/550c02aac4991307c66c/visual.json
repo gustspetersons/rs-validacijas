@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "550c02aac4991307c66c",
   "position": {
-    "x": 10,
-    "y": 870,
-    "z": 2001,
-    "height": 210,
-    "width": 280,
-    "tabOrder": 2001
+    "x": 1105.0755243754027,
+    "y": 0,
+    "z": 3000,
+    "height": 1080.335027561028,
+    "width": 814.787028420073,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -265,52 +265,48 @@
         }
       ]
     },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Lietotņu validāciju īpatsvars maršrutos un tīkla vidējais'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ed66a7db04c587ed62bc",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Maršruti"
-              }
-            },
-            "Property": "Maršruts"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "32baab8f33aab8ee5d4d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Lietotņu validāciju īpatsvars"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "896e3be36bfc4cfa1b87",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Lietotņu validāciju īpatsvars tīklā"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

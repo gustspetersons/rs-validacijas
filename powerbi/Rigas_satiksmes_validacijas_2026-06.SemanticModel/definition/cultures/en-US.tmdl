@@ -1,2 +1,2880 @@
 cultureInfo en-US
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "etaloni": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "e-taloni": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "e taloni": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Datums"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "datum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "etaloni.stunda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Stunda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "stunda": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.maršruta_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Maršruta ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "maršruta ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maršruta identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.park": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Parks"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "park": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "common": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "green": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "playground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "square": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.transportlīdzekļa_identifikator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Transportlīdzekļa identifikators"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transportlīdzekļa identifikator": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.virzien": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "Virziens"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "virzien": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "etaloni.etalona_identifikator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "E-taloni",
+			          "ConceptualProperty": "E-talona identifikators"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "e-talona identifikator": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "e talona identifikator": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "lietotne": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lietotnes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "lietotne": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "lietotne.datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lietotnes",
+			          "ConceptualProperty": "Datums"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "datum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "lietotne.stunda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lietotnes",
+			          "ConceptualProperty": "Stunda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "stunda": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "lietotne.maršruta_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lietotnes",
+			          "ConceptualProperty": "Maršruta ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "maršruta ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maršruta identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "lietotne.validāciju_skait": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Lietotnes",
+			          "ConceptualProperty": "Validāciju skaits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "validāciju skait": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršruti": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.maršruta_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Maršruta ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "maršruta ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maršruta identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "maršruta credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.maršruta_kod": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Maršruta kods"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršruta kod": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.transportlīdzekļa_veid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Transportlīdzekļa veids"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transportlīdzekļa veid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.maršruta_numur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Maršruta numurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršruta numur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.maršruta_nosaukum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Maršruta nosaukums"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršruta nosaukum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.maršrut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Maršruts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršrut": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "maršruti.nakts_maršrut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Maršruti",
+			          "ConceptualProperty": "Nakts maršruts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nakts maršrut": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nakt maršrut": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "datumi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datumi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Datums"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "datumi.gad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Gads"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.mēneša_numur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Mēneša numurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "mēneša numur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.mēnesis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Mēnesis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mēnesis": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.mēneša_diena": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Mēneša diena"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mēneša diena": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.nedēļas_dienas_numur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Nedēļas dienas numurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "nedēļas dienas numur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nedēļa diena numur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.diena": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Diena"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "diena": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.nedēļa_līdz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Nedēļa līdz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nedēļa līdz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "datumi.dienas_tip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Dienas tips"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dienas tip": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "diena tip": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "diena landfill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "diena slope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena slant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena angle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena gradient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena incline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena tilt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena lean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena list": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "diena roll": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.komentār": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Komentārs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "komentār": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "datumi.period": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Datumi",
+			          "ConceptualProperty": "Periods"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "period": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "phase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "stunda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stundas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stunda": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        }
+			      ]
+			    },
+			    "stunda.stunda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stundas",
+			          "ConceptualProperty": "Stunda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stunda": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "stunda.stundas_intervāl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Stundas",
+			          "ConceptualProperty": "Stundas intervāls"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stundas intervāl": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stunda intervāl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "mēri": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mēri": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.validācijas_no_etaloniem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Validācijas no e-taloniem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validācijas no e-taloniem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validācijas no e taloniem": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "validācija number e-taloniem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "validācija number e taloniem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "No e-taloniem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.validācijas_no_lietotnēm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Validācijas no lietotnēm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validācijas no lietotnēm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validācija number lietotnēm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.validācijas_kopā": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Validācijas kopā"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validācijas kopā": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.lietotņu_validāciju_īpatsvars": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Lietotņu validāciju īpatsvars"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lietotņu validāciju īpatsvars": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.dienu_skaits": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Dienu skaits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dienu skaits": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.vidēji_dienā_no_etaloniem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Vidēji dienā no e-taloniem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vidēji dienā no e-taloniem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vidēji dienā no e taloniem": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vidēji dienā number e taloniem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "No e-taloniem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.vidēji_dienā_no_lietotnēm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Vidēji dienā no lietotnēm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vidēji dienā no lietotnēm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vidēji dienā number lietotnēm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "No lietotnēm": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.lietotņu_validāciju_īpatsvars_tīklā": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Lietotņu validāciju īpatsvars tīklā"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lietotņu validāciju īpatsvars tīklā": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.maršrutu_skaits": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Maršrutu skaits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maršrutu skaits": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.atšķirība_no_tīkla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Atšķirība no tīkla"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "atšķirība no tīkla": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "atšķirība number tīkla": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "piekļuves_tiesība": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Piekļuves tiesības"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "piekļuves tiesība": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "piekļuve tiesība": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "piekļuves_tiesība.lietotāja_epast": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Piekļuves tiesības",
+			          "ConceptualProperty": "Lietotāja e-pasts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "lietotāja e-past": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lietotāja e past": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "piekļuves_tiesība.transportlīdzekļa_veid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Piekļuves tiesības",
+			          "ConceptualProperty": "Transportlīdzekļa veids"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "transportlīdzekļa veid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mēri.validācijas_no_lietotnēm_ar_nullēm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mēri",
+			          "ConceptualProperty": "Validācijas no lietotnēm ar nullēm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validācijas no lietotnēm ar nullēm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validācija number lietotnēm ar nullēm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "No lietotnēm": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "lietotne_has_datumi": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        }
+			      }
+			    },
+			    "lietotne_has_maršruti": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        }
+			      }
+			    },
+			    "lietotne_has_stunda": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "stunda": {
+			          "Target": {
+			            "Entity": "stunda"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_datumi": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "datumi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_datumis"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "etaloni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_etalonis"
+			        }
+			      ]
+			    },
+			    "etaloni_has_maršruti": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "maršruti"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_maršrutis"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "etaloni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_etalonis"
+			        }
+			      ]
+			    },
+			    "etaloni_has_stunda": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "stunda": {
+			          "Target": {
+			            "Entity": "stunda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "stunda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_stundas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stunda"
+			            },
+			            "Object": {
+			              "Role": "etaloni"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stundas_have_etalonis"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_validācijas_no_lietotnēm_ar_nullēm": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.validācijas_no_lietotnēm_ar_nullēm": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_no_lietotnēm_ar_nullēm"
+			          }
+			        }
+			      }
+			    },
+			    "datumi_has_mēri_validācijas_no_lietotnēm_ar_nullēm": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "mēri.validācijas_no_lietotnēm_ar_nullēm": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_no_lietotnēm_ar_nullēm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "mēri.validācijas_no_lietotnēm_ar_nullēm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_validācijas_no_lietotnēm_ar_nullēm"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_atšķirība_no_tīkla": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.atšķirība_no_tīkla": {
+			          "Target": {
+			            "Entity": "mēri.atšķirība_no_tīkla"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_mēri_atšķirība_no_tīkla": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.atšķirība_no_tīkla": {
+			          "Target": {
+			            "Entity": "mēri.atšķirība_no_tīkla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.atšķirība_no_tīkla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_atšķirība_no_tīkla"
+			        }
+			      ]
+			    },
+			    "maršruti_has_mēri_maršrutu_skaits": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "mēri.maršrutu_skaits": {
+			          "Target": {
+			            "Entity": "mēri.maršrutu_skaits"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "mēri.maršrutu_skaits"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_maršrutu_skaits"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_lietotņu_validāciju_īpatsvars_tīklā": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.lietotņu_validāciju_īpatsvars_tīklā": {
+			          "Target": {
+			            "Entity": "mēri.lietotņu_validāciju_īpatsvars_tīklā"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_mēri_lietotņu_validāciju_īpatsvars_tīklā": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.lietotņu_validāciju_īpatsvars_tīklā": {
+			          "Target": {
+			            "Entity": "mēri.lietotņu_validāciju_īpatsvars_tīklā"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.lietotņu_validāciju_īpatsvars_tīklā"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_lietotņu_validāciju_īpatsvars_tīklā"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_vidēji_dienā_no_lietotnēm": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.vidēji_dienā_no_lietotnēm": {
+			          "Target": {
+			            "Entity": "mēri.vidēji_dienā_no_lietotnēm"
+			          }
+			        }
+			      }
+			    },
+			    "datumi_has_mēri_vidēji_dienā_no_lietotnēm": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "mēri.vidēji_dienā_no_lietotnēm": {
+			          "Target": {
+			            "Entity": "mēri.vidēji_dienā_no_lietotnēm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "mēri.vidēji_dienā_no_lietotnēm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_vidēji_dienā_no_lietotnēm"
+			        }
+			      ]
+			    },
+			    "etaloni_has_mēri_vidēji_dienā_no_etaloniem": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.vidēji_dienā_no_etaloniem": {
+			          "Target": {
+			            "Entity": "mēri.vidēji_dienā_no_etaloniem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.vidēji_dienā_no_etaloniem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_vidēji_dienā_no_etaloniem"
+			        }
+			      ]
+			    },
+			    "datumi_has_mēri_vidēji_dienā_no_etaloniem": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "mēri.vidēji_dienā_no_etaloniem": {
+			          "Target": {
+			            "Entity": "mēri.vidēji_dienā_no_etaloniem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "mēri.vidēji_dienā_no_etaloniem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_vidēji_dienā_no_etaloniem"
+			        }
+			      ]
+			    },
+			    "datumi_has_mēri_dienu_skaits": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "mēri.dienu_skaits": {
+			          "Target": {
+			            "Entity": "mēri.dienu_skaits"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "mēri.dienu_skaits"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_dienu_skaits"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_lietotņu_validāciju_īpatsvars": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.lietotņu_validāciju_īpatsvars": {
+			          "Target": {
+			            "Entity": "mēri.lietotņu_validāciju_īpatsvars"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_mēri_lietotņu_validāciju_īpatsvars": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.lietotņu_validāciju_īpatsvars": {
+			          "Target": {
+			            "Entity": "mēri.lietotņu_validāciju_īpatsvars"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.lietotņu_validāciju_īpatsvars"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_lietotņu_validāciju_īpatsvars"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_validācijas_kopā": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.validācijas_kopā": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_kopā"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_mēri_validācijas_kopā": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.validācijas_kopā": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_kopā"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.validācijas_kopā"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_validācijas_kopā"
+			        }
+			      ]
+			    },
+			    "lietotne_has_mēri_validācijas_no_lietotnēm": {
+			      "Binding": {
+			        "ConceptualEntity": "Lietotnes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "lietotne": {
+			          "Target": {
+			            "Entity": "lietotne"
+			          }
+			        },
+			        "mēri.validācijas_no_lietotnēm": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_no_lietotnēm"
+			          }
+			        }
+			      }
+			    },
+			    "etaloni_has_mēri_validācijas_no_etaloniem": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "mēri.validācijas_no_etaloniem": {
+			          "Target": {
+			            "Entity": "mēri.validācijas_no_etaloniem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "mēri.validācijas_no_etaloniem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_validācijas_no_etaloniem"
+			        }
+			      ]
+			    },
+			    "stunda_has_stundas_intervāl": {
+			      "Binding": {
+			        "ConceptualEntity": "Stundas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stunda": {
+			          "Target": {
+			            "Entity": "stunda"
+			          }
+			        },
+			        "stunda.stundas_intervāl": {
+			          "Target": {
+			            "Entity": "stunda.stundas_intervāl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stunda"
+			            },
+			            "Object": {
+			              "Role": "stunda.stundas_intervāl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stundas_have_stundas_intervāls"
+			        }
+			      ]
+			    },
+			    "stunda_has_stunda": {
+			      "Binding": {
+			        "ConceptualEntity": "Stundas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stunda": {
+			          "Target": {
+			            "Entity": "stunda"
+			          }
+			        },
+			        "stunda.stunda": {
+			          "Target": {
+			            "Entity": "stunda.stunda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stunda"
+			            },
+			            "Object": {
+			              "Role": "stunda.stunda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stundas_have_stundas"
+			        }
+			      ]
+			    },
+			    "datumi_has_period": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.period": {
+			          "Target": {
+			            "Entity": "datumi.period"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.period"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_periods"
+			        }
+			      ]
+			    },
+			    "datumi_has_komentār": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.komentār": {
+			          "Target": {
+			            "Entity": "datumi.komentār"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.komentār"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_komentārs"
+			        }
+			      ]
+			    },
+			    "datumi_has_dienas_tip": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.dienas_tip": {
+			          "Target": {
+			            "Entity": "datumi.dienas_tip"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.dienas_tip"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_dienas_tips"
+			        }
+			      ]
+			    },
+			    "datumi_has_nedēļa_līdz": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.nedēļa_līdz": {
+			          "Target": {
+			            "Entity": "datumi.nedēļa_līdz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.nedēļa_līdz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_nedēļa_līdzzes"
+			        }
+			      ]
+			    },
+			    "datumi_has_diena": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.diena": {
+			          "Target": {
+			            "Entity": "datumi.diena"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.diena"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_dienas"
+			        }
+			      ]
+			    },
+			    "datumi_has_mēneša_diena": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.mēneša_diena": {
+			          "Target": {
+			            "Entity": "datumi.mēneša_diena"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.mēneša_diena"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_mēneša_dienas"
+			        }
+			      ]
+			    },
+			    "datumi_has_mēnesis": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.mēnesis": {
+			          "Target": {
+			            "Entity": "datumi.mēnesis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.mēnesis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_mēnesises"
+			        }
+			      ]
+			    },
+			    "datumi_has_gad": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.gad": {
+			          "Target": {
+			            "Entity": "datumi.gad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.gad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_gads"
+			        }
+			      ]
+			    },
+			    "datumi_has_datum": {
+			      "Binding": {
+			        "ConceptualEntity": "Datumi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "datumi": {
+			          "Target": {
+			            "Entity": "datumi"
+			          }
+			        },
+			        "datumi.datum": {
+			          "Target": {
+			            "Entity": "datumi.datum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "datumi"
+			            },
+			            "Object": {
+			              "Role": "datumi.datum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datumis_have_data"
+			        }
+			      ]
+			    },
+			    "maršruti_has_nakts_maršrut": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.nakts_maršrut": {
+			          "Target": {
+			            "Entity": "maršruti.nakts_maršrut"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.nakts_maršrut"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_nakts_maršruts"
+			        }
+			      ]
+			    },
+			    "maršruti_has_maršrut": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.maršrut": {
+			          "Target": {
+			            "Entity": "maršruti.maršrut"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.maršrut"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_maršruts"
+			        }
+			      ]
+			    },
+			    "maršruti_has_maršruta_nosaukum": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.maršruta_nosaukum": {
+			          "Target": {
+			            "Entity": "maršruti.maršruta_nosaukum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.maršruta_nosaukum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_maršruta_nosaukums"
+			        }
+			      ]
+			    },
+			    "maršruti_has_maršruta_numur": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.maršruta_numur": {
+			          "Target": {
+			            "Entity": "maršruti.maršruta_numur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.maršruta_numur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_maršruta_numurs"
+			        }
+			      ]
+			    },
+			    "maršruti_has_transportlīdzekļa_veid": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.transportlīdzekļa_veid": {
+			          "Target": {
+			            "Entity": "maršruti.transportlīdzekļa_veid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.transportlīdzekļa_veid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_transportlīdzekļa_veids"
+			        }
+			      ]
+			    },
+			    "maršruti_has_maršruta_kod": {
+			      "Binding": {
+			        "ConceptualEntity": "Maršruti"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maršruti": {
+			          "Target": {
+			            "Entity": "maršruti"
+			          }
+			        },
+			        "maršruti.maršruta_kod": {
+			          "Target": {
+			            "Entity": "maršruti.maršruta_kod"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maršruti"
+			            },
+			            "Object": {
+			              "Role": "maršruti.maršruta_kod"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maršrutis_have_maršruta_kods"
+			        }
+			      ]
+			    },
+			    "etaloni_has_etalona_identifikator": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "etaloni.etalona_identifikator": {
+			          "Target": {
+			            "Entity": "etaloni.etalona_identifikator"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "etaloni.etalona_identifikator"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_etalona_identifikators"
+			        }
+			      ]
+			    },
+			    "etaloni_has_virzien": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "etaloni.virzien": {
+			          "Target": {
+			            "Entity": "etaloni.virzien"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "etaloni.virzien"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_virziens"
+			        }
+			      ]
+			    },
+			    "etaloni_has_transportlīdzekļa_identifikator": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "etaloni.transportlīdzekļa_identifikator": {
+			          "Target": {
+			            "Entity": "etaloni.transportlīdzekļa_identifikator"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "etaloni.transportlīdzekļa_identifikator"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_transportlīdzekļa_identifikators"
+			        }
+			      ]
+			    },
+			    "etaloni_has_park": {
+			      "Binding": {
+			        "ConceptualEntity": "E-taloni"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "etaloni": {
+			          "Target": {
+			            "Entity": "etaloni"
+			          }
+			        },
+			        "etaloni.park": {
+			          "Target": {
+			            "Entity": "etaloni.park"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "etaloni"
+			            },
+			            "Object": {
+			              "Role": "etaloni.park"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "etalonis_have_parks"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

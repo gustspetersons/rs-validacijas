@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "RS_valid_cijas23651852846573984.json",
+      "name": "RS_valid_cijas5137935491390297.json",
       "reportVersionAtImport": {
         "visual": "2.14.0",
         "report": "3.4.0",
@@ -65,8 +65,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "RS_valid_cijas23651852846573984.json",
-          "path": "RS_valid_cijas23651852846573984.json",
+          "name": "RS_valid_cijas5137935491390297.json",
+          "path": "RS_valid_cijas5137935491390297.json",
           "type": "CustomTheme"
         }
       ]

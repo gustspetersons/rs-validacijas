@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "5d3a526ec620e3ab0dd5",
   "position": {
-    "x": 300,
+    "x": 300.18469468107952,
     "y": 0,
-    "z": 2002,
-    "height": 280,
-    "width": 280,
-    "tabOrder": 2002
+    "z": 4000,
+    "height": 1080.335027561028,
+    "width": 804.8908296943232,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "tableEx",
@@ -89,80 +89,84 @@
         }
       }
     },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "label": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Kopā'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "317.41641463771464D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Maršruti.Maršruts"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "94D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Validācijas no e-taloniem"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91.02532619959449D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Validācijas no lietotnēm"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "124.92154410627289D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Mēri.Lietotņu validāciju īpatsvars"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "927a6444c6518c2a4d77",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Maršruti"
-              }
-            },
-            "Property": "Maršruts"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "540c0205755e9f4c80f1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Validācijas no e-taloniem"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "af0842270e89e3e87a02",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Validācijas no lietotnēm"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d1962a074fcc0ff0961f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Validācijas kopā"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b3dccd95813fc434cd66",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Mēri"
-              }
-            },
-            "Property": "Lietotņu validāciju īpatsvars"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

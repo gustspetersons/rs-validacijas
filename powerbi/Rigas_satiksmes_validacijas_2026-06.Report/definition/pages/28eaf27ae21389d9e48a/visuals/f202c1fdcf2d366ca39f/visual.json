@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "f202c1fdcf2d366ca39f",
   "position": {
-    "x": 590,
-    "y": 0,
+    "x": 279,
+    "y": 539.34283055336823,
     "z": 8000,
-    "height": 280,
-    "width": 280,
+    "height": 540.9921970076598,
+    "width": 1098.4780585582362,
     "tabOrder": 8000
   },
   "visual": {
@@ -32,6 +32,30 @@
             }
           ]
         },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Stundas"
+                        }
+                      },
+                      "Property": "Stundas intervāls"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Stundas.Stundas intervāls)",
+              "nativeQueryRef": "Stundas intervāls",
+              "displayName": "Stundas intervāls"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -46,7 +70,8 @@
                 }
               },
               "queryRef": "Mēri.Vidēji dienā no e-taloniem",
-              "nativeQueryRef": "Vidēji dienā no e-taloniem"
+              "nativeQueryRef": "No e-taloniem",
+              "displayName": "No e-taloniem"
             },
             {
               "field": {
@@ -60,7 +85,8 @@
                 }
               },
               "queryRef": "Mēri.Vidēji dienā no lietotnēm",
-              "nativeQueryRef": "Vidēji dienā no lietotnēm"
+              "nativeQueryRef": "No lietotnēm",
+              "displayName": "No lietotnēm"
             }
           ]
         }
@@ -69,20 +95,87 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Mēri"
+                    "Entity": "Stundas"
                   }
                 },
-                "Property": "Vidēji dienā no e-taloniem"
+                "Property": "Stunda"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BottomRight'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'linear'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -91,7 +184,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Vidēji dienā no e-taloniem un lietotnēm'"
+                  "Value": "'Validāciju skaits vidēji stundā'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -104,7 +211,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'pa stundām'"
+                  "Value": "''"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

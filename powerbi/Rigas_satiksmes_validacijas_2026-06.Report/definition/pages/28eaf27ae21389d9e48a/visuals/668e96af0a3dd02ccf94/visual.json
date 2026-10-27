@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "668e96af0a3dd02ccf94",
   "position": {
-    "x": 300,
-    "y": 870,
+    "x": 279,
+    "y": 0,
     "z": 7000,
-    "height": 210,
-    "width": 280,
+    "height": 539.34283055336823,
+    "width": 1641,
     "tabOrder": 7000
   },
   "visual": {
@@ -27,8 +27,32 @@
                 }
               },
               "queryRef": "Datumi.Datums",
-              "nativeQueryRef": "Datums",
+              "nativeQueryRef": "Datums2",
               "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Datumi"
+                        }
+                      },
+                      "Property": "Komentārs"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Datumi.Komentārs)",
+              "nativeQueryRef": "Komentārs",
+              "displayName": "Komentārs"
             }
           ]
         },
@@ -46,7 +70,8 @@
                 }
               },
               "queryRef": "Mēri.Validācijas no e-taloniem",
-              "nativeQueryRef": "Validācijas no e-taloniem"
+              "nativeQueryRef": "No e-taloniem",
+              "displayName": "No e-taloniem"
             },
             {
               "field": {
@@ -56,11 +81,12 @@
                       "Entity": "Mēri"
                     }
                   },
-                  "Property": "Validācijas no lietotnēm"
+                  "Property": "Validācijas no lietotnēm ar nullēm"
                 }
               },
-              "queryRef": "Mēri.Validācijas no lietotnēm",
-              "nativeQueryRef": "Validācijas no lietotnēm"
+              "queryRef": "Mēri.Validācijas no lietotnēm ar nullēm",
+              "nativeQueryRef": "No lietotnēm",
+              "displayName": "No lietotnēm"
             }
           ]
         }
@@ -84,6 +110,60 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "lineStyles": [
+        {
+          "properties": {
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'linear'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BottomRight'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Scalar'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -91,7 +171,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Validācijas no e-taloniem un lietotnēm'"
+                  "Value": "'Validāciju skaits pa jūnija datumiem'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
@@ -104,7 +198,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

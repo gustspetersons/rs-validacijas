@@ -26,8 +26,10 @@ table Mēri
 			
 			        DIVIDE ( [Validācijas no lietotnēm], [Validācijas kopā] )
 			```
-		formatString: 0.0%;-0.0%;0.0%
+		formatString: 0.0 %
 		lineageTag: a5558dc0-7a24-4698-b692-1edd240a54b2
+
+		annotation PBI_FormatHint = {"isCustom":true}
 
 	measure 'Dienu skaits' = ```
 			
@@ -57,8 +59,10 @@ table Mēri
 			
 			   CALCULATE ( [Lietotņu validāciju īpatsvars], REMOVEFILTERS ( 'Maršruti' ) )
 			```
-		formatString: 0.0%;-0.0%;0.0%
+		formatString: 0.0 %
 		lineageTag: 1197771a-bff7-4a6b-a0c2-a89135201526
+
+		annotation PBI_FormatHint = {"isCustom":true}
 
 	measure 'Maršrutu skaits' = ```
 			
@@ -73,6 +77,13 @@ table Mēri
 		lineageTag: fb936e47-ea61-4a16-b558-aab890ceead5
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Validācijas no lietotnēm ar nullēm' = ```
+			
+			     IF ( NOT ISBLANK ( [Dienu skaits] ), [Validācijas no lietotnēm] + 0 )
+			```
+		formatString: #,0
+		lineageTag: 7c31859b-27da-4985-8048-140ca51011a0
 
 	column Value
 		isHidden

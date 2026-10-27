@@ -481,5 +481,10 @@
     "#493452",
     "#0D2E25",
     "#54484E"
-  ]
+  ],
+  "textClasses": {
+    "title": {
+      "fontFace": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif"
+    }
+  }
 }
