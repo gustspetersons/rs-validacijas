@@ -4,7 +4,7 @@ Rīgas satiksmes sabiedriskajā transportā 2026. gada jūnijā reģistrēta 8 7
 
 - **[Kopsavilkums vienā lapā (PDF)](Rigas_satiksmes_validacijas_2026-06_kopsavilkums.pdf)**
 - **[Pilnā analīze nbviewer vietnē](https://nbviewer.org/github/gustspetersons/rs-validacijas/blob/main/Rigas_satiksmes_validacijas_2026-06.ipynb)**: tur tabulas un grafiki izskatās tāpat kā Jupyter vidē.
-- **Power BI pārskats** (`powerbi/`), atverams programmā Power BI Desktop
+- **[Power BI pārskats](#power-bi-pārskats)** (`powerbi/`), atverams programmā Power BI Desktop
 
 ![Validācijas pa dienām, 2026. gada jūnijs](atteli/1_junija_validacijas_pa_datumiem_un_kanaliem.png)
 
@@ -16,6 +16,12 @@ Rīgas satiksmes sabiedriskajā transportā 2026. gada jūnijā reģistrēta 8 7
 - Datos ir īpatnības: 55 e-talonu validācijas bezmaksas Līgo un Jāņu dienās; slēgts maršruts, kas datos parādās 26 dienās; maršrutu nosaukumi, kas mainās pirms izmaiņu spēkā stāšanās.
 
 Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
+
+## Power BI pārskats
+
+![Power BI pārskata lapa „Kopskats”](atteli/powerbi_1_kopskats.png)
+
+Citi ekrānuzņēmumi: [lapa „Maršruti”](atteli/powerbi_2_marsruti.png), [datu modelis](atteli/powerbi_3_modelis.png) un [lapa „Maršruti” lietotājam ar piekļuvi tikai tramvajiem un trolejbusiem](atteli/powerbi_4_rls.png).
 
 ## Faili
 
@@ -29,7 +35,7 @@ Visi secinājumi ir analīzes sadaļā „Galvenie secinājumi”.
 | `sagatavot_powerbi_datus.py` | sagatavo Power BI modeļa datus (piecus Parquet failus) no DuckDB faila |
 | `environment.yml` | conda vide: Python 3.14, pandas 3.0, DuckDB 1.5, matplotlib 3.11 |
 | `explicit.txt` | precīzas pakotņu versijas Windows datoram (win-64) |
-| `atteli/` | analīzes grafiki un tabula (PNG) |
+| `atteli/` | analīzes grafiki un tabula, Power BI ekrānuzņēmumi (PNG) |
 | `LICENSE` | MIT licence |
 
 ## Kā atkārtot
